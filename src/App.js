@@ -1,14 +1,16 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
+import Home from "./Pages/Home";
+import "./App.css";
 
 function App() {
   return (
-    <div className="App">
-      <h2>Hi From App</h2>
-      <p>
-        Surah Al-Baqarah
-      </p>
-    </div>
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        {/* <Route path="*" element={<ErrorPage />} /> */}
+      </Routes>
+    </BrowserRouter>
   );
 }
 

@@ -1,0 +1,14 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+.container {
+    display: flex;
+    flex-direction: row;
+    background-color: #0c0c0c;
+    width: 100%;
+    height: 100vh;
+    color: #fff;
+    /* padding: 200px 100px; */
+    clip-path: path('M0,128 C130,64 350,192 500,128 L500,00 L0,0 Z');
+}

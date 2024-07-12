@@ -2,13 +2,146 @@
     padding: 0;
     margin: 0;
 }
-.container {
+.first {
+    position: absolute;
+    width: 100%;    
+    margin-top: 200px;
+}
+
+.second {
+    position: absolute;
     display: flex;
     flex-direction: row;
-    background-color: #0c0c0c;
-    width: 100%;
-    height: 100vh;
+    width: 100%;    
+    margin-top: 350px;
+    padding: 150px 250px;
     color: #fff;
-    /* padding: 200px 100px; */
-    clip-path: path('M0,128 C130,64 350,192 500,128 L500,00 L0,0 Z');
+}
+.left {
+    flex: 1;
+}
+.left span h1 {
+    padding: 7px;
+    text-align: center;
+    font-weight:400;
+    width: 135px;
+    border-radius: 50px;
+    background-color: #252525;
+}
+.second .left h2 {
+    font-size: 30px;
+    font-weight: 800;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    background-image: linear-gradient(66deg,#17e5e5, #285ce5 100%);
+    -webkit-background-clip: text;
+    color: transparent;
+}
+.left h5 {
+    font-size: 33px;
+    font-weight: 550;
+    line-height: 34px;
+    margin-bottom:20px;
+}
+.second .left p {
+    font-size: 18px;
+    line-height: 24px;
+    color: #9c9c9c;
+}
+.second .right {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.right img {
+    width: 400px;
+}
+
+.Myflex {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    width: 100%;
+    padding: 50px 250px;
+    margin-top: 890px;
+    gap: 20px;
+}
+.My2flex {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    width: 100%;
+    padding: 50px 250px;
+    margin-top: 1090px;
+    gap: 20px;
+}
+.Myflex .left {
+    flex: 1;
+}
+.My2flex .left {
+    flex: 1;
+}
+.Myflex .left h2 {
+    font-size: 25px;
+    font-weight: 550;
+    margin-bottom: 10px;
+    background-image: linear-gradient(66deg,#17e5e5, #285ce5 100%);
+    -webkit-background-clip: text;
+    color: transparent;
+}
+.My2flex .left h2 {
+    font-size: 25px;
+    font-weight: 550;
+    margin-bottom: 10px;
+    background-image: linear-gradient(66deg,#17e5e5, #285ce5 100%);
+    -webkit-background-clip: text;
+    color: transparent;
+}
+.Myflex .left p {
+    font-size: 18px;
+    line-height: 24px;
+    color: #9c9c9c;
+}
+.My2flex .left p {
+    font-size: 18px;
+    line-height: 24px;
+    color: #9c9c9c;
+}
+
+.Myflex .right {  
+    flex: 1; 
+}
+.My2flex .right {  
+    flex: 1; 
+}
+.Myflex .right h2 {
+    font-size: 25px;
+    font-weight: 550;
+    margin-bottom: 10px;
+    background-image: linear-gradient(66deg,#17e5e5, #285ce5 100%);
+    -webkit-background-clip: text;
+    color: transparent;
+}
+.My2flex .right h2 {
+    font-size: 25px;
+    font-weight: 550;
+    margin-bottom: 10px;
+    background-image: linear-gradient(66deg,#17e5e5, #285ce5 100%);
+    -webkit-background-clip: text;
+    color: transparent;
+}
+.Myflex .right p {
+    font-size: 18px;
+    line-height: 24px;
+    color: #9c9c9c;
+}
+.My2flex .right p {
+    font-size: 18px;
+    line-height: 24px;
+    color: #9c9c9c;
 }

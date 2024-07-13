@@ -1,23 +1,30 @@
+:root {
+    /* --secondary-color: #344155; */
+    --secondary-color: #000000;
+    --font-size: 16px;
+}
+
 *{
     padding: 0;
     margin: 0;
 }
 .first {
-    position: absolute;
+    /* position: absolute; */
     width: 100%;    
-    margin-top: 200px;
+    /* margin-top: 200px; */
 }
 
 .second {
-    position: absolute;
+    /* position: absolute; */
     display: flex;
     flex-direction: row;
     width: 100%;    
-    margin-top: 350px;
-    padding: 150px 250px;
+    /* margin-top: 350px; */
+    padding: 150px 250px 50px;
     color: #fff;
+    background-color: var(--secondary-color);
 }
-.left {
+.second .left {
     flex: 1;
 }
 .left span h1 {
@@ -63,22 +70,24 @@
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    position: absolute;
+    /* position: absolute; */
     width: 100%;
-    padding: 50px 250px;
-    margin-top: 890px;
+    padding: 0px 250px;
+    /* margin-top: 890px; */
     gap: 20px;
+    background-color: var(--secondary-color);
 }
 .My2flex {
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    position: absolute;
+    /* position: absolute; */
     width: 100%;
     padding: 50px 250px;
-    margin-top: 1090px;
+    /* margin-top: 1090px; */
     gap: 20px;
+    background-color: var(--secondary-color);
 }
 .Myflex .left {
     flex: 1;

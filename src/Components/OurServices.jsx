@@ -13,7 +13,7 @@ const OurService = () => {
           </svg>
         </div>
       </div>
-      <div className="second bg-black">
+      <div className="second bg-blac">
         <div className="left">
           <span><h1>OUR SERVICES</h1></span>
           <h2>WHAT WE DO</h2>
@@ -24,9 +24,9 @@ const OurService = () => {
           <img src="https://www.zetalight.com/images/illustrations/home/services.svg" alt="" />
         </div>
       </div>
-      <div className="Myflex bg-black">
+      <div className="Myflex ">
         <div className="left">
-          <i></i>
+          <FontAwesomeIcon className="text-blue-500" style={{ fontSize: '38px',color: '#e42c40' }} icon={faCode} />
           <h2>UI/UX Designs</h2>
           <p>Lorem, ipsum dolor sit amet consectetur 
             adipisicing elit. Impedit aperiam enim consequuntur 
@@ -35,8 +35,8 @@ const OurService = () => {
             </p>
         </div>
         <div className="right">
-        <i></i>
-          <h2>WEB DEVELOPMENT OPERATIONS</h2>
+          <FontAwesomeIcon className="text-blue-500" style={{ fontSize: '38px',color: '#e42c40' }} icon={faCode} />
+          <h2>DEVELOPMENT OPERATIONS</h2>
           <p>Lorem, ipsum dolor sit amet consectetur 
             adipisicing elit. Impedit aperiam enim consequuntur 
             adipisci blanditiis architecto, 
@@ -46,8 +46,8 @@ const OurService = () => {
       </div>
       <div className="My2flex bg-black">
         <div className="left">
-          <FontAwesomeIcon icon={faCode} />
-          <h2>Mobile App Development</h2>
+          <FontAwesomeIcon className="text-blue-500" style={{ fontSize: '38px',color: '#e42c40' }} icon={faCode} />
+          <h2>Deployment Services</h2>
           <p>Lorem, ipsum dolor sit amet consectetur 
             adipisicing elit. Impedit aperiam enim consequuntur 
             adipisci blanditiis architecto, 
@@ -55,8 +55,8 @@ const OurService = () => {
             </p>
         </div>
         <div className="right">
-        <i></i>
-          <h2>Deployment Services</h2>
+          <FontAwesomeIcon className="text-blue-500" style={{ fontSize: '38px',color: '#e42c40' }} icon={faCode} />
+          <h2>Maintenance</h2>
           <p>Lorem, ipsum dolor sit amet consectetur 
             adipisicing elit. Impedit aperiam enim consequuntur 
             adipisci blanditiis architecto, 

@@ -1,3 +1,11 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.form-input {
+  @apply border border-gray-300 focus:ring-0 focus:border-gray-400;
+}
+
+/* .btn-primary {
+  @apply inline-block px-5 py-2.5 rounded text-sm cursor-pointer select-none outline-none transition-all duration-500 focus:outline-none focus:ring-0 focus:ring-offset-0 hover:-translate-y-1.5 bg-green-500 text-white
+} */

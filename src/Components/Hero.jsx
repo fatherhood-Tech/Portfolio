@@ -1,37 +1,65 @@
 import React from "react";
+import "../Styles/Hero.css";
 
 const Hero = () => {
   return (
     <div>
-      <section className="relative py-10 text-white bg-black mb-96 sm:py-16 md:py-24 md:pb-72">
-        <div className="absolute hidden w-11/12 max-w-4xl -mt-56 duration-300 -translate-x-1/2 shadow-lg group top-full left-1/2 md:block hover:translate-y-3">
-          <img
-            className="object-cover w-full h-full"
-            src="https://adminlte.io/wp-content/uploads/2021/07/notus-nextjs-tailwind-css-template.jpg"
-            alt=""
-          />
-        </div>
+      <section className="relative py-10 text-black bg-white mb-96 sm:py-16 md:py-24 md:pb-72">
+        <div className="absolute hidden w-11/12 h-64 max-w-6xl -mt-56 duration-300 -translate-x-1/2 shadow-lg group top-full left-1/2 md:block hover:translate-y-3">
+          <div className="flex flex-col h-64 bg-gray-900 text-gray-200 font-mono">
+            {/* Top bar */}
+            <div className="flex items-center h-10 px-4 bg-gray-800">
+              <div className="h-3 w-3 mr-2 rounded-full bg-red-500"></div>
+              <div className="h-3 w-3 mr-2 rounded-full bg-yellow-500"></div>
+              <div className="h-3 w-3 rounded-full bg-green-500"></div>
+            </div>
 
-        <div className="px-4 mx-auto max-w-7xl sm:px-6 md:flex lg:px-8">
+            {/* CMD body */}
+            <div className="flex-1 p-4">
+              <div className="flex">
+                <div className="mr-2">&gt;</div>
+                <input
+                  type="text"
+                  className="flex-1 bg-gray-800 focus:outline-none"
+                  placeholder="What's your next big project?"
+                />
+              </div>
+
+              <div className="mt-2">
+                <span className="text-green-500">&gt; Output:</span>
+                <div className="bg-gray-800 p-2 mt-1">
+                  <p>Let's turn it into reality.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        {/* object-cover w-full h-full */}
+        {/* Background Shapes */}
+        <div className="shape1"></div>
+        <div className="shape2"></div>
+        {/* <div className="shape3"></div> */}
+
+        <div className="px-4 mx-auto max-w-12xl sm:px-6 md:flex lg:px-8 mt-10">
           <div className="flex flex-col items-center mx-auto mb-16 text-center lg:mb-0 lg:max-w-lg">
             <div className="max-w-xl mb-6">
               <div>
-                <p className="inline-block px-3 py-px mb-4 text-xs font-semibold tracking-wider text-white uppercase rounded-full ">
-                  Transforming Ideas into Digital Reality
+                <p className="inline-block px-3 py-px mb-4 text-xs font-semibold tracking-wider text-black uppercase rounded-full">
+                  FATHERHOOD TECH
                 </p>
               </div>
               <h2 className="max-w-lg mb-6 font-sans text-3xl font-bold tracking-tight sm:text-4xl xl:text-5xl">
-                WELCOME TO FATHERHOOD TECH
+                TRANSFORMING IDEAS INTO DIGITAL REALITY
               </h2>
-              <p className="text-base text-gray-300 md:text-lg">
-                At Fatherhood tech Inc, we specialize in bringing your vision
-                to life with cutting-edge software development services. From
+              <p className="text-base text-gray-900 md:text-lg">
+                At Fatherhood Tech Inc, we specialize in bringing your vision to
+                life with cutting-edge software development services. From
                 concept to completion, we provide end-to-end solutions tailored
                 to your unique business needs.
               </p>
             </div>
             <div className="flex flex-col sm:flex-row sm:space-x-4 sm:px-0">
-              <button className="relative flex items-center justify-center px-6 py-2 mt-4 font-medium text-black transition bg-gray-100 border-2 border-gray-100 rounded-lg hover:translate-y-1">
+              <button className="relative flex items-center justify-center px-6 py-2 mt-4 font-medium text-black transition bg-gray-500 border-2 border-gray-100 rounded-lg hover:translate-y-1">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   viewBox="0 0 24 24"
@@ -45,23 +73,10 @@ const Hero = () => {
                     clipRule="evenodd"
                   />
                 </svg>
-                Kurajyahe?
+                Learn More
               </button>
-              <button className="flex items-center px-6 py-2 mt-4 font-medium text-gray-100 transition border-2 border-gray-100 rounded-lg hover:translate-y-1 hover:text-black hover:bg-white">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  viewBox="0 0 24 24"
-                  fill="currentColor"
-                  className="w-5 h-5 mr-2"
-                >
-                  <path
-                    fillRule="evenodd"
-                    d="M5.625 1.5c-1.036 0-1.875.84-1.875 1.875v17.25c0 1.035.84 1.875 1.875 1.875h12.75c1.035 0 1.875-.84 1.875-1.875V12.75A3.75 3.75 0 0016.5 9h-1.875a1.875 1.875 0 01-1.875-1.875V5.25A3.75 3.75 0 009 1.5H5.625zM7.5 15a.75.75 0 01.75-.75h7.5a.75.75 0 010 1.5h-7.5A.75.75 0 017.5 15zm.75 2.25a.75.75 0 000 1.5H12a.75.75 0 000-1.5H8.25z"
-                    clipRule="evenodd"
-                  />
-                  <path d="M12.971 1.816A5.23 5.23 0 0114.25 5.25v1.875c0 .207.168.375.375.375H16.5a5.23 5.23 0 013.434 1.279 9.768 9.768 0 00-6.963-6.963z" />
-                </svg>
-                Al bakala
+              <button className="flex items-center px-6 py-2 mt-4 font-medium text-gray-900 transition border-2 border-gray-800 rounded-lg hover:translate-y-1 hover:text-black hover:bg-white">
+                Contact Us
               </button>
             </div>
           </div>

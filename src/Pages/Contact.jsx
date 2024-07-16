@@ -14,11 +14,11 @@ const Contact = () => {
         Contact Us
       </h2>
       <div className="h-0.5 bg-gray-800 w-24 mb-2"></div>
-      <p className="text-gray-100 mb-8">
+      <p className="text-white mb-8">
         Fill in the form to start the conversation
       </p>
       <div className="grid grid-cols-1 lg:grid-cols-2">
-        <div className="mb-8 lg:mb-0 text-gray-100">
+        <div className="mb-8 lg:mb-0 text-white">
           <h3 className="text-2xl mb-8">Rwanda</h3>
           <p className="mb-2">
             <ion-icon name="call-outline"></ion-icon> +250 780 597 235

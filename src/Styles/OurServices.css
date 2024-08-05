@@ -1,157 +1,180 @@
 :root {
+    --primary-color: color: #ababab;
     /* --secondary-color: #344155; */
-    --secondary-color: #000000;
+    --secondary-color: #0D1117;
     /* --secondary-color: #b3b3b341; */
     --font-size: 16px;
 }
-
 *{
     padding: 0;
     margin: 0;
+    box-sizing: border-box;
 }
-.first {
-    /* position: absolute; */
-    width: 100%;    
-    /* margin-top: 200px; */
-}
-
-.second {
-    /* position: absolute; */
-    display: flex;
-    flex-direction: row;
-    width: 100%;    
-    /* margin-top: 350px; */
-    padding: 150px 250px 50px;
-    color: #fff;
+body{
+    /* background-color: #2e364a; */
     background-color: var(--secondary-color);
 }
-.second .left {
-    flex: 1;
+.timeline {
+    position: relative;
+    max-width: 100%;
+    max-width: 1200px;
+    margin: 0px auto;
 }
-.left span h1 {
-    padding: 7px;
-    text-align: center;
-    font-weight:400;
-    width: 135px;
-    border-radius: 50px;
-    background-color: #252525;
+.container {
+    position: relative;
+    padding: 10px 50px;
+    width: 50%;
+    animation: moveDown 6s linear forwards;
+    opacity: 0;
+    /* background-color: rgb(30, 39, 52); */
 }
-.second .left h2 {
-    font-size: 30px;
+
+@keyframes moveDown {
+    0%{
+        opacity: 1;
+        transform: translateY(-30px);
+    }
+    100%{
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
+.container:nth-child(1) {
+    animation-delay: 0s;
+}
+.container:nth-child(2) {
+    animation-delay: 1s;
+}
+.container:nth-child(3) {
+    animation-delay: 2s;
+}
+.container:nth-child(4) {
+    animation-delay: 3s;
+}
+.container:nth-child(5) {
+    animation-delay: 4s;
+}
+.container:nth-child(6) {
+    animation-delay: 5s;
+}
+
+
+
+.text-box {
+    position: relative;
+    padding: 20px 30px;
+    background-color: #161B22;
+    color: #ababab;
+    border-radius: 14px;
+    border-radius: 6px;
+    font-size: 15px;
+}
+/* mirroring on the other side */
+.left-container {
+    left: 0;
+}
+.right-container {
+    left: 50%;
+}
+.small {
+    font-size: 10px;
+}
+
+.container img {
+    position: absolute;
+    width: 40px;
+    border-radius: 50%;
+    object-fit: fill;
+    right: -20px;
+    top: 32px;
+    z-index: 10;
+}
+
+.right-container img {
+    left: -20px;
+}
+
+.timeline::after {
+    content: '';
+    position: absolute;
+    width: 4px;
+    background-color: #161B22;
+    height: 100%;
+    top: 0;
+    left: 50%;
+    margin-left: -3px;
+    z-index: -1;
+    animation: moveLine 6s linear forwards;
+}
+
+@keyframes moveLine {
+    0% {
+        height: 0;
+    }
+    100% {
+        height: 100%;
+    }
+}
+
+.text-box h2 {
     font-weight: 800;
-    margin-top: 20px;
-    margin-bottom: 10px;
-    background-image: linear-gradient(66deg,#17e5e5, #285ce5 100%);
-    -webkit-background-clip: text;
-    color: transparent;
 }
-.left h5 {
-    font-size: 33px;
-    font-weight: 550;
-    line-height: 34px;
-    margin-bottom:20px;
-}
-.second .left p {
-    font-size: 18px;
-    line-height: 24px;
-    color: #9c9c9c;
-}
-.second .right {
-    flex: 1;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.right img {
-    width: 400px;
+.text-box small {
+    display: inline-block;
+    margin-bottom: 15px;
 }
 
-.Myflex {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    /* position: absolute; */
-    width: 100%;
-    padding: 0px 250px;
-    /* margin-top: 890px; */
-    gap: 20px;
-    background-color: var(--secondary-color);
+.left-container-arrow {
+    height: 0;
+    width: 0;
+    position: absolute;
+    top: 28px;
+    z-index: 1;
+    border-top: 15px solid transparent;
+    border-bottom: 15px solid transparent;
+    border-left: 15px solid #161B22;
+    right: -15px;
 }
-.My2flex {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    /* position: absolute; */
-    width: 100%;
-    padding: 50px 250px;
-    /* margin-top: 1090px; */
-    gap: 20px;
-    background-color: var(--secondary-color);
-}
-.Myflex .left {
-    flex: 1;
-}
-.My2flex .left {
-    flex: 1;
-}
-.Myflex .left h2 {
-    font-size: 25px;
-    font-weight: 550;
-    margin-bottom: 10px;
-    background-image: linear-gradient(66deg,#17e5e5, #285ce5 100%);
-    -webkit-background-clip: text;
-    color: transparent;
-}
-.My2flex .left h2 {
-    font-size: 25px;
-    font-weight: 550;
-    margin-bottom: 10px;
-    background-image: linear-gradient(66deg,#17e5e5, #285ce5 100%);
-    -webkit-background-clip: text;
-    color: transparent;
-}
-.Myflex .left p {
-    font-size: 18px;
-    line-height: 24px;
-    color: #9c9c9c;
-}
-.My2flex .left p {
-    font-size: 18px;
-    line-height: 24px;
-    color: #9c9c9c;
+.right-container-arrow {
+    height: 0;
+    width: 0;
+    position: absolute;
+    top: 28px;
+    z-index: 1;
+    border-top: 15px solid transparent;
+    border-bottom: 15px solid transparent;
+    border-right: 15px solid #161B22;
+    left: -15px;
 }
 
-.Myflex .right {  
-    flex: 1; 
-}
-.My2flex .right {  
-    flex: 1; 
-}
-.Myflex .right h2 {
-    font-size: 25px;
-    font-weight: 550;
-    margin-bottom: 10px;
-    background-image: linear-gradient(66deg,#17e5e5, #285ce5 100%);
-    -webkit-background-clip: text;
-    color: transparent;
-}
-.My2flex .right h2 {
-    font-size: 25px;
-    font-weight: 550;
-    margin-bottom: 10px;
-    background-image: linear-gradient(66deg,#17e5e5, #285ce5 100%);
-    -webkit-background-clip: text;
-    color: transparent;
-}
-.Myflex .right p {
-    font-size: 18px;
-    line-height: 24px;
-    color: #9c9c9c;
-}
-.My2flex .right p {
-    font-size: 18px;
-    line-height: 24px;
-    color: #9c9c9c;
+
+@media (max-width: 600px) {
+    .timeline {
+        margin: 50px auto;
+    }
+    .timeline::after {
+        left: 31px;
+    }
+    .container {
+        width: 100%;
+        padding-left: 80px;
+        padding-right: 25px;
+    }
+    .text-box {
+        font-size: 13px;
+    }
+    .text-box small {
+        margin-bottom: 10px;
+    }
+    .right-container {
+        left: 0;
+    }
+    .left-container img, .right-container img {
+        left: 10px;
+    }
+    .left-container-arrow, .right-container-arrow {
+        border-right: 15px solid #fff;
+        border-left: 0;
+        left: -15px;   
+    }
 }

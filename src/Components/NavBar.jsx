@@ -23,15 +23,16 @@ const NavBar = () => {
   return (
     <div className="px-0">
       <nav
-        className={`fixed w-full z-10 ${
-          scrolled ? "bg-black/20 backdrop-blur" : " bg-white text-gray-900"
-        } transition-all duration-300`}
+        className={`fixed w-full z-50 text-white ${
+          scrolled ? "bg-black/20 backdrop-blur text-white" : "text-gray-900"
+        } transition-all duration-300 overflow-hidden`}
       >
-        <div className="w-full py-3 border-b border-gray-400">
+        <div className="w-full border-b border-gray-400">
           <div className="flex justify-between px-6 md:px-10 lg:px-20 items-center font-semibold">
             <div>
-              <h1 className="text-2xl">Ftech</h1>
+              <img src="images/f.png" alt="Logo" className="h-16 md:h-20" />
             </div>
+
             <div className="hidden md:flex gap-4 lg:gap-8">
               <NavLink
                 exact

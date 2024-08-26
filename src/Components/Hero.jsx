@@ -8,7 +8,7 @@ const Hero = () => {
     <div className="pb-20 pt-36 relative overflow-hidden">
       <div>
         <Spotlight
-          className="-top-40 -left-10 md:-left-32 md:-top-20 h-screen"
+          className="-top-40 -left-10 md:-left-32 md:-top-20 h-screen overflow-hidden"
           fill="white"
         />
         <Spotlight
@@ -19,11 +19,11 @@ const Hero = () => {
       </div>
 
       <div
-        className="h-screen w-full bg-black-200 dark:bg-grid-white/[0.03] bg-grid-black-100/[0.2]
+        className="h-screen w-full bg-black-200 bg-grid-black-100/[0.2]
        absolute top-0 left-0 flex items-center justify-center"
       >
         <div
-          className="absolute pointer-events-none inset-0 flex items-center justify-center bg-black-200
+          className="absolute pointer-events-none inset-0 flex items-center justify-center bg-black-900
          [mask-image:radial-gradient(ellipse_at_center,transparent_20%,black)]"
         />
       </div>
@@ -35,8 +35,9 @@ const Hero = () => {
           </p>
           <TextGenerateEffect
             words="Transforming Ideas Into Digital Reality"
-            className="text-center text-[40px] md:text-5xl lg:text-6xl"
+            className="text-center text-white text-[40px] md:text-5xl lg:text-6xl"
           />
+
           <p className="text-center text-white md:tracking-wider mb-4 text-sm md:text-lg lg:text-2xl">
             Hi! I&apos;m Adrian, a Next.js Developer based in Croatia.
           </p>

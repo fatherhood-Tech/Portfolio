@@ -21,13 +21,13 @@ const NavBar = () => {
   }, []);
 
   return (
-    <div className="px-0">
+    <div className="overflow-hidden">
       <nav
         className={`fixed w-full z-50 text-white ${
           scrolled ? "bg-black/20 backdrop-blur text-white" : "text-gray-900"
-        } transition-all duration-300 overflow-hidden`}
+        } transition-all duration-300`}
       >
-        <div className="w-full border-b border-gray-400">
+        <div className="w-full border-b-2 border-gray-800">
           <div className="flex justify-between px-6 md:px-10 lg:px-20 items-center font-semibold">
             <div>
               <img src="images/f.png" alt="Logo" className="h-16 md:h-20" />
@@ -79,7 +79,7 @@ const NavBar = () => {
               </NavLink>
             </div>
             <div className="hidden md:block">
-              <button className="py-2 px-6 bg-black text-white rounded-3xl font-semibold">
+              <button className="py-2 px-6 bg-black text-white font-semibold">
                 Reach us
               </button>
             </div>
